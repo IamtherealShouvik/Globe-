@@ -1,2 +1,2 @@
 # International Telephone Input
-# Globe
+
