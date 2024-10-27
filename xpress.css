@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: url(starry.png);
+    /* background: #ff0; */
+    background-size: contain;
+    background-repeat: repeat;
+    font-family: 'Poppins', 'sans-serif';
+}
+.headlogo{
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    width: 4.02rem;
+    height: 3.84rem;
+}
+#explog{
+    position: relative;
+    left: 50%;
+    top: 14%;
+    transform: translate(-50%, 0%);
+    height: 3rem;
+    width: 18rem;
+}
+.register{
+    position: absolute;
+    left: 50%;
+    top: 22%;
+    transform: translate(-50%, 0%);
+    height: 560px;
+    width: 450px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 12px;
+    overflow: none;
+}
+.register > p {
+    position: relative;
+    top: 10px;
+    font-family: 'Calibri', 'sans-serif';
+    font-weight: 600;
+    font-size: 38px;
+    margin: 14px;
+    padding-bottom: 28px;
+}
+.register > input{
+    margin-left: 14px;
+    display: flex;
+    height: 9.7%;
+    width: 77%;
+    border: 1.8px solid #ddd;
+    border-radius: 3.5px;
+    font-size: 18px;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.register > input~label{
+    position: relative;
+    top: 4px;
+    font-size: 15px;
+    color: #ddd;
+    display: flex-end;
+    padding-left: 35px;
+}
+.register > input~label:focus, .register > input~label:valid{
+    position: relative;
+    top: -50px;
+    padding: 4px;
+    background-color: #fff;
+    font-size: 8.6px;
+    color: blue;
+    border: 2.4px solid blue;
+    transition: 0.3s all ease-in-out;
+}

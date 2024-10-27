@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xpressway - Phone Number</title>
+    <link rel="stylesheet" href="number.css">
+    <link rel="stylesheet" href="./build/css/intlTelInput.css">
+    <link rel="shortcut icon" href="images/hdfc-colour-logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <img src="images/hdfc-white.png" id="watermark"/>
+    <img src="images/logo_hdfc_xpressway.png" id="expresslogo"/>
+    <div class="mobile">
+            <figure> <img src="images/Google Phone Notification Animation.gif"/> </figure>
+        <p id="ver2">2-Step Verification</p>
+        <form action="#">
+            <div class=".iti__flag-container"> 
+                <input type="tel" id="formphonenumber"> 
+            </div>
+
+            <div class="call">
+                <input type="text" id="enternumber" required autocomplete="off">
+                <label for="enternumber">Phone Number</label>
+            </div>
+            <button type="submit" id="otp_request" disabled>OTP<i class="ri-arrow-right-fill"></i></button>
+            <div class="onetimepassword">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <button type="submit" id="otp_verify" disabled>Enter</button>
+            </div>
+            <div class="hit-or-miss">
+                <p id="hit"><i class="ri-checkbox-circle-fill"></i> OTP successsfully verified.</p>
+                <p id="miss"><i class="ri-error-warning-fill"></i> Invalid OTP. Could not verify.</p>
+                <button type="submit" id="otp_resend"><i class="ri-reset-left-fill"></i>&nbsp;Resend</button>
+            </div>
+        </form>
+    </div><!--Mobile-->
+    <div class="terms">
+        <a href="rights-hdfc.html">Copyright <i class="ri-copyright-line"></i> HDFC. All rights reserved. </a>&nbsp;|&nbsp;
+        <a href="usageterms-hdfc.html">Terms of Use </a>
+    </div>
+    <script src="./build/js/intlTelInput.js"></script>
+    <script src="number.js"></script>
+</body>
+</html>

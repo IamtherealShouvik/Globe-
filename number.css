@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: none;
+}
+body{
+    height: 100vh;
+    background: url('images/shades_navyblue.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', 'sans-serif';
+}
+.mobile{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 560px;
+    height: auto;
+    width: 450px;
+    background: #fff;
+    border-radius: 12px;
+    outline: none;
+    padding: 4px 0px 12px 0px;
+}
+.mobile > figure{
+    position: relative;
+    top: 4%;
+    left:50%;
+    transform: translate(-22%, 0%);
+    margin-bottom: 20px;
+}
+.mobile > p{
+    position: relative;
+    top: 4px;
+    padding: 10px;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Calibri', 'sans-serif';
+    margin-bottom: 10px;
+}
+#formphonenumber{
+    height: 48px;
+    width: 10px;
+    border: 0.8px solid #aca9a9;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#formphonenumber:focus{ 
+    outline: none;
+    border: 2.2px solid rgb(41, 50, 231);
+}
+.mobile .call{ position: relative; }
+.mobile .call input{
+    position: absolute;
+    top: -48px;
+    left: 74px;
+    height: 48px;
+    width: 68%;
+    padding: 0.662rem 10px;
+    border: 0.8px solid #aca9a9;
+    border-radius: 3px;
+    background: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    align-items: center;
+    font-family: 'Poppins', 'sans-serif';
+    
+}
+.mobile .call label{
+    position: absolute;
+    top: -36px;
+    left: 84px;
+    padding: 0.1rem 0.38rem;
+    background-color: #fff;
+    font-size: 14px;
+    color: #aca9a9;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+.mobile .call input:focus ~ label
+{
+    top: -55px;
+    left: 82px;
+    color: rgb(41, 50, 231);
+    font-size: 11px;
+    background-color: #fff;
+    padding: 0px 4px;
+}
+.mobile .call label.valid {
+    top: -55px;
+    left: 82px;
+    color: rgb(41, 50, 231);
+    font-size: 11px;
+    background-color: #fff;
+    padding: 0px 4px;
+}
+.mobile .call input:focus{
+    outline: none;
+    border: 2.2px solid rgb(41, 50, 231);
+}
+#otp_request {
+    position: relative;
+    left: 76.3%;
+    transform: translateX(-48%);
+    width: max-content;
+    margin-top: 8px;
+    margin-right: 10px;
+    margin-bottom: 12px;
+    padding: 6px 2px 6px 4px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    border: 0;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, padding 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    overflow: hidden; 
+}
+
+ #otp_request:enabled {
+    color: #fff;
+    background: rgb(41, 50, 231);
+    padding: 6px 8px 6px 8px;
+    cursor: pointer; 
+}
+
+#otp_request:disabled {
+    color: rgb(41, 50, 231);
+    background-color: transparent;
+    padding: 6px 4px; 
+}
+
+ #otp_request i { transition: transform 0.4s ease-in-out; }
+ #otp_request:enabled i { transform: translateX(8px); }
+ #otp_request:disabled i { transform: translateX(0); }
+
+.ri-arrow-right-fill{ padding: 0px 4px; }
+p{
+    align-self: center;
+    font-size: 12px;
+}
+.addition a{ text-decoration: none; color: rgb(41, 50, 231); }
+.addition a:hover{ text-decoration: none; color: red; }
+
+.onetimepassword{
+    position: relative; 
+    display: flex; 
+    justify-content: center;
+    margin: 20px 0px 10px 0px;
+}
+.onetimepassword input{
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    border: 1px solid #aca9a9;
+    margin: 2px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 4px;
+    outline: none;
+    font-weight: bold;
+    align-self: center;
+}
+.onetimepassword input:focus{
+    border: 3.02px solid rgb(41, 50, 231);
+}
+.locked{ 
+    opacity: 0.5; 
+    cursor: no-drop;
+}
+#otp_verify:disabled{
+    position: relative;
+    outline: none;
+    top: 4px;
+    height: 36px;
+    margin-left: 6px;
+    padding: 0px 14px;
+    font-size: 16px;
+    color: #817d7d;
+    font-weight: 500;
+    border: 1px solid transparent;
+    background-color: #cdcbcb;
+    border-radius: 4px;
+    cursor: no-drop
+}
+#otp_verify:enabled{
+    position: relative;
+    outline: none;
+    top: 4px;
+    height: 36px;
+    margin-left: 6px;
+    padding: 0px 14px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid rgb(41, 50, 231);;
+    background-color: rgb(41, 50, 231);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+.hit-or-miss{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    width: 74%;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    justify-content: center;
+    align-items: center;
+}
+#hit{
+    position: relative;
+    font-size: 13px;
+    text-align: left;
+    color: #07df90;
+    font-weight: 500;
+}
+#miss{
+    position: relative;
+    top: -20px;
+    font-size: 13px;
+    text-align: left;
+    color: red;
+    font-weight: 500;
+}
+#otp_resend{
+    position: relative;
+    padding: 6px;
+    padding-left: 4px;
+    outline: none;
+    top: -44px;
+    left: 79%;
+    justify-content: right;
+    height: max-content;
+    width: max-content;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 550;
+    background: rgb(41, 50, 231);
+}
+#watermark{
+    position: absolute;
+    height: 61px;
+    width: 61px;
+    top: 0;
+    padding: 8px; 
+}
+#expresslogo{
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+.terms{
+    position: absolute;
+    padding-top: 7px;
+    bottom: 0;
+    height: 36px;
+    width: 100vw;
+    display: flex-end;
+    text-align: end;
+    color: #8e8d8d; 
+    padding-right: 2%;
+    font-family: 'Calibri', 'sans-serif';
+    background-color: rgb(243, 237, 237);
+}
+.terms a{
+    font-size: 16px;
+    color: #8e8d8d; 
+    text-decoration: none; 
+    cursor: pointer; 
+}
+.ri-copyright-line{ 
+    font-weight:300; 
+    font-size: 14px;
+}

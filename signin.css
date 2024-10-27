@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: none;
+}
+body{
+    background: #c8dbf0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', 'sans-serif';
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    height: 50%;
+    width: 72%;
+    border-radius: 2rem;
+}
+.container > ul{
+    padding: 5px 0px 1px 5px;
+    position: relative;
+    top: 5%;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    flood-color: #000;
+    font-weight: 400;
+    list-style: none;
+}
+.container > ul  h1{ font-weight: 450; }
+.container > ul img{ 
+    height: 60px;
+    width: 60px;
+}
+.container > .enquiry {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      top: 47%;
+      left: 2.5%;
+      height: 7.7%;
+      width: 19%;
+      padding: 5px 1px 0px 5px;
+      background-color: transparent;
+      gap: 18px;
+}
+.enquiry > abbr { border-bottom: none;  }
+.enquiry button {
+      border: none;
+      background: none;
+      color: rgb(10, 10, 197);
+      font-size: 24px;
+      cursor: pointer;
+}
+.details{
+    position: absolute;
+    top: 16%;
+    left: calc(48% - 30px);
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 60%;
+    padding: 7px;
+}
+.contactnumber{
+    display: flex;
+    gap: 5px;
+    padding: 20px 7px;
+}
+
+.container .call{ position: relative; }
+.container .call input{
+    position: absolute;
+    top: -48px;
+    left: 77px;
+    height: 50px;
+    width: 61%;
+    padding: 0.662rem 10px;
+    border: 0.8px solid #aca9a9;
+    border-radius: 3px;
+    background: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    align-items: center;
+    font-family: 'Poppins', 'sans-serif';
+    
+}
+.container .call label{
+    position: absolute;
+    display: flex;
+    top: -34px;
+    left: 84px;
+    padding: 0.1rem 0.38rem;
+    background-color: #fff;
+    font-size: 14px;
+    color: #aca9a9;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+.container .call input:focus ~ label
+{
+    top: -55px;
+    left: 85px;
+    display: flex;
+    color: rgb(41, 50, 231);
+    font-size: 11px;
+    background-color: #fff;
+    padding: 0px 4px;
+}
+.container .call input:valid ~ label {
+    top: -55px;
+    left: 82px;
+    display: flex;
+    color: rgb(41, 50, 231);
+    font-size: 11px;
+    background-color: #fff;
+    padding: 0px 4px;
+}
+.container .call input:focus{
+    outline: none;
+    border: 2.4px solid rgb(41, 50, 231);
+}
+#formphonenumber{
+    position: relative;
+    display: flex-start;
+    height: 50px;
+    width:max-content;
+    top: 5%;
+    border: transparent;
+    outline: none;
+    caret-color: transparent;
+}
+.dob{ position: relative; }
+.dob > input{
+    position: relative;
+    left: -3px;
+    height: 50px;
+    width: calc(87% - 89px);
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #aca9a9;
+    padding-left: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Calibri', 'sans-serif';
+    margin-top: 16px;
+}
+.dob > input:focus{
+    outline: none;
+    border: 2.4px solid rgb(41, 50, 231);
+}
+.dob > input:valid{
+    outline: none;
+    border: 1px solid #aca9a9;
+}
+.dob > input ~ label{
+    position: absolute;
+    top: 59%;
+    display: flex;
+    transform: translateY(-50%);
+    left: 5px;
+    padding-left: 5px;
+    font-size: 15px;
+    color:#aca9a9;
+    transition: all 0.3s ease;
+}
+.dob > input:focus ~ label{
+    position: absolute;
+    top: 16px;
+    left: 1.7px;
+    display: flex;
+    font-size: 12px;
+    color: rgb(41, 50, 231);
+    background-color: #fff;
+    max-height: max-content;
+    max-width: max-content;
+    padding: 3px;
+    margin-left: 4px;
+    border-radius: 2px;
+    transition-delay: 0ms;
+    transition: all 0.3s ease;
+}
+.dob > input:valid ~ label{
+    position: absolute;
+    top: 16px;
+    left: 1.7px;
+    font-size: 12px;
+    color: rgb(41, 50, 231);
+    background-color: #fff;
+    max-height: max-content;
+    max-width: max-content;
+    padding: 3px;
+    margin-left: 4px;
+    border-radius: 2px;
+    transition-delay: 0ms;
+    transition: all 0.3s ease;
+}
+#lostnumber a{
+    left: -5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0959da;
+    text-decoration: none;
+}
+#comment{
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    top: 10%;
+}
+#engage{ color: rgb(10, 10, 197); }
+#comment a{
+    text-decoration: none;
+    cursor: pointer;
+}
+#onetimepassword{
+    position: relative;
+    width: max-content;
+    top: 30%;
+    left: 55%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #727171;
+    background-color: #d0cfcf;
+    outline: none;
+    border: 2px solid #d0cfcf;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: no-drop;
+}
+#onetimepassword:enabled{
+    position: relative;
+    width: max-content;
+    top: 30%;
+    left: 55%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(41, 50, 231);
+    outline: none;
+    border: 2px solid rgb(41, 50, 231);
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xpressway - Log In</title>
+    <link rel="shortcut icon" href="./images/hdfc-colour-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="./build/css/intlTelInput.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li><img src="./images/hdfc-colour-logo.png"/></li>
+            <li><h1>Sign In</h1></li>
+            <li><p>to continue to Xpressway </p></li>
+        </ul>
+
+        <div class="enquiry">
+            <abbr title="Help">
+                <a href="helpx.xpressway.html">
+                  <button type="submit">
+                    <i class="ri-shake-hands-fill"></i>
+                  </button>
+                </a>
+              </abbr>
+
+              <abbr title="Privacy">
+                <a href="privacy.xpressway.html">
+                  <button type="submit">
+                    <i class="ri-git-repository-private-fill"></i>
+                  </button>
+                </a>
+              </abbr>
+
+              <abbr title="Terms">
+                <a href="terms.xpressway.html">
+                  <button type="submit">
+                    <i class="ri-honour-fill"></i>
+                  </button>
+                </a>
+              </abbr>
+        </div> <!--Enquiry-->
+        <form method="POST">
+        <div class="details">
+             
+          <div class=".iti__flag-container"> 
+            <input type="tel" id="formphonenumber" aria-disabled="true"> 
+        </div>
+        <div class="call">
+            <input type="text" id="enternumber" required autocomplete="off">
+            <label for="enternumber">Phone Number</label>
+        </div>
+          
+            <div class="dob">
+              <input type="text" id="birthday" required autocomplete="off">
+              <label for="birthday">Date of Birth</label>
+            </div><!--DoB-->
+            <p id="lostnumber"><a href="">Forgot Number?</a></p>
+            <p id="comment">No account? No problem. You can <span id="engage"><a href="./index.html"><b>Sign Up</b></a></span> anytime.</p>
+            <button type="submit" onclick="window.location.href='./password.html'" id="onetimepassword" disabled>Get OTP</button>
+        </div><!--Details-->
+        </form>
+    </div> <!--Container-->
+    <script src="signin.js"></script>
+    <script src="./build/js/intlTelInput.js"></script>
+</body>
+</html>
