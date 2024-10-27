@@ -1,7 +1,7 @@
 # Xpressway
 
 HDFC has a popular banking service called the "Xpressway" which aims at making banking simpler. However, their user-interface does not live up to the mark.
-I went through certain websites and tried to recreate "Xpressway" in the way they are designed. 
+I went through certain websites and tried to recreate "Xpressway" in the way they are designed. This is not the ultimate design, just the first draft, which will be remastered in the future.
 <br>
 Link to the website:&nbsp; https://express.netlify.app
 
